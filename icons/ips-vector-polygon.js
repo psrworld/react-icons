@@ -1,0 +1,18 @@
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export const IpsVectorPolygonIcon = (_a) => {
+    var { size = 24, color = 'currentColor', className = '', style = {}, title, onClick } = _a, props = __rest(_a, ["size", "color", "className", "style", "title", "onClick"]);
+    return (_jsxs("svg", Object.assign({ width: size, height: size, viewBox: "0 0 448 512", fill: color, className: `react-icon solid-icon ips-vector-polygon ${className}`, style: style, onClick: onClick, "data-category": "solid", "data-prefix": "ips", "data-icon": "ips-vector-polygon" }, props, { children: [title && _jsx("title", { children: title }), _jsx("path", { d: "M0 64C0 46.3 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32l192 0c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-31.7 0-4.5 7.9-28.4 49.7c.4 2.1 .6 4.2 .6 6.4l0 64c0 2.2-.2 4.3-.6 6.4l28.4 49.7 4.5 7.9 31.7 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l-192 0c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l0-192c-17.7 0-32-14.3-32-32L0 64zM322.2 372.3L292.3 320 256 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.3 0 29.9-52.3c-1.4-3.6-2.2-7.5-2.2-11.7l-192 0c0 17.7-14.3 32-32 32l0 192c17.7 0 32 14.3 32 32l192 0c0-4.1 .8-8.1 2.2-11.7zM48 80l0 32 32 0 0-32L48 80zm320 0l0 32 32 0 0-32-32 0zM80 400l-32 0 0 32 32 0 0-32zm288 0l0 32 32 0 0-32-32 0zM304 240l-32 0 0 32 32 0 0-32z" })] })));
+};
+export default IpsVectorPolygonIcon;
+//# sourceMappingURL=ips-vector-polygon.js.map
