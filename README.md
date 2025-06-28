@@ -1,12 +1,11 @@
-# icons.psrworld
-# PsrWorld Icons
+# psrworld-react-icons-library
 
 A comprehensive React icon library with thousands of icons across multiple styles including brands, solid, regular, and duotone variations.
 
 ## Installation
 
 ```bash
-npm install psrworld
+npm install psrworld-react-icons-library
 ```
 
 ## Usage
@@ -15,27 +14,29 @@ npm install psrworld
 
 ```jsx
 import React from 'react';
-import PsrIcon from 'psrworld';
+import './App.css'; {/* app.css is optional */}
+import { 
+  IpsUserIcon,
+  IpsHouseIcon, 
+  IpsCartShoppingIpstIcon, 
+  IpsChairOfficeIcon,
+  IpsChartLineUpIcon
+} from 'psrworld-react-icons-library';
 
 function App() {
   return (
     <div>
-      {/* Brand icons */}
-      <PsrIcon icon="brand facebook" />
-      <PsrIcon icon="brands twitter" />
-      <PsrIcon icon="b instagram" />
+     {/* Ips icons prefix solid */}
+     
+      <IpsUserIcon /> {/* user icons */}
       
-      {/* Solid icons */}
-      <PsrIcon icon="solid heart" />
-      <PsrIcon icon="s star" />
+      <IpsHouseIcon /> {/* house icons */}
       
-      {/* Regular icons */}
-      <PsrIcon icon="regular user" />
-      <PsrIcon icon="r home" />
+      <IpsCartShoppingIpstIcon /> {/* cart shopping ipst icons */}
       
-      {/* Duotone icons */}
-      <PsrIcon icon="duotone bell" />
-      <PsrIcon icon="d calendar" />
+      <IpsChairOfficeIcon /> {/* chair office icons */}
+      
+      <IpsChartLineUpIcon /> {/* chartLine up icons */}
     </div>
   );
 }
@@ -46,17 +47,32 @@ export default App;
 ### Advanced Usage
 
 ```jsx
-import PsrIcon from 'psrworld';
+import './App.css'; {/* app.css is optional */}
+import { 
+  IpsUserIcon,
+  IpsHouseIcon, 
+  IpsCartShoppingIpstIcon, 
+  IpsChairOfficeIcon,
+  IpsChartLineUpIcon
+} from 'psrworld-react-icons-library';
 
 function CustomIcon() {
   return (
-    <PsrIcon 
-      icon="solid heart"
-      size="2.5"                    // Size in rem units
-      color="#ff6b6b"               // Custom color
-      className="my-icon-class"     // Custom CSS class
-      style={{ margin: '10px' }}    // Inline styles
-    />
+     {/* Ips icons prefix solid */}
+     
+      <IpsUserIcon /> {/* user icons */}
+      
+      <IpsHouseIcon className="my-icon-class" /> {/* house icons */}
+      
+      <IpsCartShoppingIpstIcon
+      color="#900C3F" /> {/* cart shopping ipst icons */}
+      
+      <IpsChairOfficeIcon
+      size="2.5rem" /> {/* chair office icons */}
+      
+      <IpsChartLineUpIcon
+      style={{ margin: '10px',padding: '0.5rem', backgroundColor: '#ddd', width: '2.5rem', height: '2.5rem', color: '#FF5733' }}
+      /> {/* chartLine up icons */}
   );
 }
 ```
@@ -65,8 +81,8 @@ function CustomIcon() {
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `icon` | `string` | **required** | Icon name in format "style iconname" |
-| `size` | `string` | `"1.5"` | Size in rem units |
+| `Ips Ipb` | `string` | **required** | Icon name in format "Ips IconName Icon" |
+| `size` | `string` | `"1.5rem"` | Size in rem units ( em, rem, px, ..ect) |
 | `color` | `string` | `"currentColor"` | Icon color (CSS color value) |
 | `className` | `string` | `""` | Additional CSS classes |
 | `style` | `object` | `{}` | Inline styles object |
@@ -76,32 +92,32 @@ function CustomIcon() {
 PsrWorld includes four icon collections:
 
 ### Brand Icons
-Use with: `brand`, `brands`, or `b`
+Use with: `Icons prefix "Ip"`, or `brands "b"`, `Ipb`
 ```jsx
-<PsrIcon icon="brand facebook" />
-<PsrIcon icon="brands google" />
-<PsrIcon icon="b github" />
+import { 
+  IpbFacebookIcon,
+  IpbGoogleIcon,
+  IpbGithubIcon
+} from 'psrworld-react-icons-library';
+
+  <IpbFacebookIcon />
+  <IpbGoogleIcon />
+  <IpbGithubIcon />
 ```
 
 ### Solid Icons
-Use with: `solid` or `s`
+Use with: `Icons prefix "Ip"`, or `solid "s"`, `Ips`
 ```jsx
-<PsrIcon icon="solid heart" />
-<PsrIcon icon="s star" />
-```
-
-### Regular Icons
-Use with: `regular` or `r`
-```jsx
-<PsrIcon icon="regular user" />
-<PsrIcon icon="r home" />
-```
-
-### Duotone Icons
-Use with: `duotone` or `d`
-```jsx
-<PsrIcon icon="duotone bell" />
-<PsrIcon icon="d calendar" />
+import { 
+  IpsShuttersIcon,
+  IpsSquareCaretUpIcon,
+  IpsUserIcon,
+  IpsNotesIcon
+} from 'psrworld-react-icons-library';
+  <IpsShuttersIcon />
+  <IpsSquareCaretUpIcon />
+  <IpsUserIcon />
+  <IpsNotesIcon />
 ```
 
 ## Styling
@@ -124,6 +140,8 @@ Icons inherit the current text color by default. You can style them using CSS:
 
 ### Icon Button
 ```jsx
+import { IpsStarIcon } from 'psrworld-react-icons-library';
+
 function IconButton({ onClick, children }) {
   return (
     <button 
@@ -140,7 +158,7 @@ function IconButton({ onClick, children }) {
         cursor: 'pointer'
       }}
     >
-      <PsrIcon icon="solid star" size="1" />
+      <IpsStarIcon size="1rem" />
       {children}
     </button>
   );
@@ -149,20 +167,26 @@ function IconButton({ onClick, children }) {
 
 ### Navigation Menu
 ```jsx
+import { 
+  IpsHouseIcon,
+  IpsUserIcon,
+  IpsEnvelopeIcon
+} from 'psrworld-react-icons-library';
+
 function Navigation() {
   return (
     <nav>
       <ul style={{ display: 'flex', listStyle: 'none', gap: '20px' }}>
         <li>
-          <PsrIcon icon="r home" size="1.2" />
+          <IpsHouseIcon size="1.2rem" />
           <span>Home</span>
         </li>
         <li>
-          <PsrIcon icon="r user" size="1.2" />
+          <IpsUserIcon size="1.2rem" />
           <span>Profile</span>
         </li>
         <li>
-          <PsrIcon icon="r envelope" size="1.2" />
+          <IpsEnvelopeIcon" size="1.2rem" />
           <span>Messages</span>
         </li>
       </ul>
@@ -177,13 +201,13 @@ function SocialLinks() {
   return (
     <div style={{ display: 'flex', gap: '16px' }}>
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-        <PsrIcon icon="brand facebook" size="2" color="#1877f2" />
+        <IpbFacebookIcon size="2rem" color="#1877f2" />
       </a>
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <PsrIcon icon="brand twitter" size="2" color="#1da1f2" />
+        <IpbTwitterIcon" size="2rem" color="#1da1f2" />
       </a>
       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-        <PsrIcon icon="brand instagram" size="2" color="#e4405f" />
+        <IpbInstagramIcon" size="2rem" color="#e4405f" />
       </a>
     </div>
   );
@@ -203,7 +227,7 @@ We welcome contributions! Please feel free to submit issues and pull requests.
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/psrworld/icons.psrworld/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/psrworld/react-icons/blob/main/LICENSE).
 
 ## Support
 
