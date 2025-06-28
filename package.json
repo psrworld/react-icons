@@ -1,11 +1,15 @@
 {
-  "name": "psrworld/react-icons-library",
-  "version": "2.0.1",
-  "description": "A comprehensive React icons library with TypeScript support",
+  "name": "psrworld-react-icons-library",
+  "version": "1.0.2",
+  "description": "A comprehensive React icon library with thousands of icons across multiple styles including brands, solid, regular, and duotone variations with typescript support.",
   "main": "./index.js",
   "types": "./index.d.ts",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psrworld/react-icons.git"
   },
   "keywords": [
     "react",
@@ -14,17 +18,11 @@
     "typescript",
     "components"
   ],
-  "license": "ISC",
-  "type": "commonjs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/psrworld/icons.psrworld.git"
-  },
-  "bugs": {
-    "url": "https://github.com/psrworld/icons.psrworld/issues"
-  },
-  "homepage": "https://github.com/psrworld/icons.psrworld#readme",
-  
   "author": "psr world",
-  "license": "MIT"
+  "license": "ISC, MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/psrworld/react-icons/issues"
+  },
+  "homepage": "https://github.com/psrworld/react-icons#readme"
 }
